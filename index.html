@@ -15,7 +15,7 @@
         
         var choose = prompt ( "выберите размер массива " ); 
         
-        
+        var sum = 0;
         var arr =   new Array(choose);
         
         
@@ -33,15 +33,27 @@
         
         for ( var i=0; i <choose; i++ ){
             
-            arr[i] = prompt("Введите" + i + "ячейку");
+            arr[i] = prompt("Введите " + i + " ячейку");
             
         }
         
+        
+        alert(" Вы ввели такие числа")
         for (var i=0; i <choose; i++ ){
         
+            
+            
             alert ( arr[i] );
             
         }
+        
+        for ( var i = 0; i <choose; i++  ){
+            
+            sum = parseInt(arr[i]) + parseInt(sum) ;
+            
+        }
+        
+        alert("Сумма всех ячеек: \t"+sum);
         
         /*          простой способ
         
