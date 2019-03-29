@@ -14,7 +14,7 @@
         
         
         var choose = prompt ( "выберите размер массива " ); 
-        
+        var difference = 0;
         var sum = 0;
         var arr =   new Array(choose);
         
@@ -54,6 +54,17 @@
         }
         
         alert("Сумма всех ячеек: \t"+sum);
+        
+        for ( var i = 0; i <choose; i++ ){
+            
+            
+            difference = parseInt(arr[i]) - parseInt(difference) ;
+            
+        }
+            alert("Разница всех ячеек: \t" + difference);
+        
+        
+        alert("Среднее арифметическое: " + (parseInt(sum)) / parseInt(choose)); 
         
         /*          простой способ
         
