@@ -17,6 +17,7 @@
         var difference = 0;
         var sum = 0;
         var arr =   new Array(choose);
+        var division = 1;
         
         
         /*     простой способ
@@ -65,6 +66,24 @@
         
         
         alert("Среднее арифметическое: " + (parseInt(sum)) / parseInt(choose)); 
+        
+        
+        
+        for ( var i = 0; i <choose; i++  ){
+            
+            
+            if ( parseInt(arr[i]) != 0 ){
+                
+            division = parseInt(arr[i]) /  parseInt(division)
+                
+            }
+            
+            
+            
+        }
+        
+        alert("Поделили все ячейки: " + division);
+        
         
         /*          простой способ
         
