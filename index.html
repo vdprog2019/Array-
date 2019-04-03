@@ -9,95 +9,38 @@
 
 </head>
 <body>
-    <script>
-        
-        
-        
-        var choose = prompt ( "выберите размер массива " ); 
-        var difference = 0;
+    <script>       
+           
+        var number = prompt ("сколько нужно чисел");
         var sum = 0;
-        var arr =   new Array(choose);
-        var division = 1;
         
-        
-        /*     простой способ
-        arr[0] = prompt("Введите 0 ячейку")
-        arr[1] = prompt("Введите 1 ячейку")
-        arr[2] = prompt("Введите 2 ячейку")
-        arr[3] = prompt("Введите 3 ячейку")
-        arr[4] = prompt("Введите 4 ячейку")
-        arr[5] = prompt("Введите 5 ячейку")
-        */
-        
-        
-        //нормалный способ
-        
-        for ( var i=0; i <choose; i++ ){
-            
-            arr[i] = prompt("Введите " + i + " ячейку");
-            
+        var arr =   new Array(number);
+
+        for ( var i=0; i <number; i++ ){
+	            
+	        arr[i] = prompt("Введите " + i + " ячейку");
+	            
+	    }
+        alert ( arr[i] );
+
+      
+        for (var i = 0; i < number; i++)
+        {
+            if (i % 2 == 0) sum += i;
         }
-        
-        
-        alert(" Вы ввели такие числа")
-        for (var i=0; i <choose; i++ ){
-        
-            
-            
-            alert ( arr[i] );
-            
-        }
-        
-        for ( var i = 0; i <choose; i++  ){
-            
-            sum = parseInt(arr[i]) + parseInt(sum) ;
-            
-        }
-        
-        alert("Сумма всех ячеек: \t"+sum);
-        
-        for ( var i = 0; i <choose; i++ ){
-            
-            
-            difference = parseInt(arr[i]) - parseInt(difference) ;
-            
-        }
-            alert("Разница всех ячеек: \t" + difference);
-        
-        
-        alert("Среднее арифметическое: " + (parseInt(sum)) / parseInt(choose)); 
-        
-        
-        
-        for ( var i = 0; i <choose; i++  ){
-            
-            
-            if ( parseInt(arr[i]) != 0 ){
-                
-            division = parseInt(arr[i]) /  parseInt(division)
-                
+        alert(sum);
+
+
+        var count = 0;
+        for(var i = 0; i < number; ++i){
+            if(arr[i] == 7){
+                count++;
             }
-            
-            
-            
-        }
-        
-        alert("Поделили все ячейки: " + division);
-        
-        
-        /*          простой способ
-        
-        alert(arr[0])
-        alert(arr[1])
-        alert(arr[2])
-        alert(arr[3])
-        alert(arr[4])
-        alert(arr[5])
-        
-        */
-        
-        
-        
-    </script>
+                
+            }alert(arr[i]);
+
+
+
+      </script>
 </body>
 </html>
